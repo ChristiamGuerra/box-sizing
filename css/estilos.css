@@ -1,0 +1,23 @@
+/* NOTE: box-sizing esta propiedad indica como determinar el tamaño de una caja a partir de la medida de su alto y ancho con las propiedades width y height
+content-box: valor usado por defecto en box-zising, este valor indica que el contenido adopta las dimenciones de alto y ancho definidos, sin incluir padding, border y margin. esto significa que la caja aumenta su tamaño con respecto a las dimenciones indicadas.
+
+padding-box: indica que la caja tomara las dimenciones de las propiedades width y  height incluyendo padding, pero excluyendo border y margin. con este tipo de dimencionamiento el contenido se reduce para incluir el valor de padding.
+
+border-box: en donde las dimenciones especificadas en las propiedades width y height incluyen tanto padding como border excluyendo unicamente la propiedad margin. es el valor mas utilizado, ya que los valores especificados en la dimencion de una caja son los que realmente adopta la misma. este valor es el que se usa para el sistema de rejilla, pues permite la ubicacion de los bloques en la cuadricula sin problemas en la definicion de padding en el interior de cada elemento.
+  */
+* {
+  box-sizing: content-box;
+}
+
+#contenedor {
+  width: 90%;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+#cuadrado {
+  width: 50%;
+  height: 300px;
+  background-color: yellow;
+  border: 1px solid black;
+}
